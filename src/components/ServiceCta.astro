@@ -2,9 +2,12 @@
 import { SERVICE_CTA, TEMPLATE_REPO } from "../consts";
 ---
 <aside class="cta">
-  <p>{SERVICE_CTA.text}</p>
+  <p class="heading">{SERVICE_CTA.heading}</p>
+  <ul>
+    {SERVICE_CTA.points.map((p) => <li>{p}</li>)}
+  </ul>
   <p>
-    {SERVICE_CTA.url && <a href={SERVICE_CTA.url}>MCP 서버 개발 의뢰하기</a>}
+    {SERVICE_CTA.url && <a href={SERVICE_CTA.url}>{SERVICE_CTA.linkText}</a>}
     {SERVICE_CTA.url && " · "}
     <a href={TEMPLATE_REPO}>공개 템플릿 보기</a>
   </p>
@@ -12,4 +15,6 @@ import { SERVICE_CTA, TEMPLATE_REPO } from "../consts";
 <style>
   .cta { margin-top: 3rem; padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: 8px; background: #f6f8fa; }
   .cta p { margin: 0.25rem 0; }
+  .cta .heading { font-weight: 600; }
+  .cta ul { margin: 0.5rem 0; padding-left: 1.25rem; }
 </style>
