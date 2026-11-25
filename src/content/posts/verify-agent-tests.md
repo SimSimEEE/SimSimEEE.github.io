@@ -1,8 +1,7 @@
 ---
 title: "AI가 만든 \"통과한 테스트\"를 믿지 않는 법"
 description: "에이전트가 들고 온 초록색 테스트 결과를 믿기 전에 확인할 다섯 가지: 변이, 집합, 관찰 도구, 정상 경로의 거절, 분모."
-published: 2026-12-02
-draft: true
+published: 2026-11-25
 tags: ["claude-code", "testing", "verification"]
 ---
 
