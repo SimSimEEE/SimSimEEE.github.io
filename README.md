@@ -22,6 +22,14 @@ npm run build     # astro check + 빌드 → dist/
 
 처음 한 번: 레포 Settings → Pages → Source를 **GitHub Actions**로 바꾼다.
 
+## 방문자 집계
+
+[GoatCounter](https://www.goatcounter.com)로 페이지뷰를 센다. 쿠키는 쓰지 않는다.
+
+- 레포 변수 `GOATCOUNTER_CODE`에 GoatCounter 코드(`<code>.goatcounter.com`의 `<code>`)를 넣으면 다음 배포부터 집계한다.
+- 비어 있으면 스크립트가 들어가지 않는다.
+- 통계는 `https://<code>.goatcounter.com`에서 본다.
+
 ## 개인 도메인 연결 (나중에)
 
 1. 도메인 DNS에 GitHub Pages용 레코드를 추가한다(apex는 A/AAAA, 서브도메인은 `<계정>.github.io`로 CNAME — GitHub 문서 "Managing a custom domain for your GitHub Pages site" 참고).
